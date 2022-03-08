@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #252525;
+  font-family: Georgia, serif;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.header {
+  background: #252525;
+  padding: 15px 0;
+}
+
+.header-navbar ul {
+  float: right;
+}
+
+.header-navbar ul li {
+  display: inline-block;
+}
+
+.header-navbar ul li a {
+  color: #fff;
+  font-size: 1.125rem;
+  padding: 10px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) { 
+  .header-navbar ul {
+    float: none;
+  }
+}
+
+/* Intro */
+
+.intro {
+  background: url('../img/bg-intro.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 150px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.intro h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.intro h1::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: #fff;
+  margin: 10px auto;
+}
+
+.intro p {
+  font-style: italic;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: 60px 0;
+  }
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* About */
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.about-item h3 {
+  font-size: 2.25rem;
+  line-height: 1em;
+  background: #252525;
+  width: 220px;
+  color: #fff;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  padding: 5px 0 10px 0;
+  top: -25px;
+  position: relative;
+}
+
+.about > p {
+  font-size: 1.125rem;
+  line-height: 1.4em;
+  font-style: italic;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 460px;
+}
+
+/* Products */
+
+.products {
+  background: #e7e4d8;
+  border-top: 3px solid #d6d3c8;
+  border-bottom: 3px solid #d6d3c8;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.products-item {
+  margin-bottom: 40px;
+}
+
+.products-item h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.products-item h2::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: currentColor;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 5px solid #e7e4d8;
+  box-shadow: 0 0 0 5px currentColor;
+}
+
+h2.products-paulista::before {
+  color: #492901;
+}
+
+h2.products-carioca::before {
+  color: #c17139;
+}
+
+h2.products-mineiro::before {
+  color: #d7a54d;
+}
+
+.products-item p {
+  font-size: 0.875rem;
+  line-height: 1.4em;
+}
+
+.products-btn {
+  width: 180px;
+  border: 3px solid #252525;
+  color: #252525;
+  display: block;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.products-btn:hover {
+  text-decoration: none;
+  color: #c17139;
+  border-color: #c17139;
+}
+
+/* Stores */
+
+.stores {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.stores-item {
+  margin-bottom: 40px;
+}
+
+.stores-item h2 {
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.stores-item p {
+  font-size: 1.125rem;
+  line-height: 1.4em;
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+.stores-item a {
+  display: inline-block;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  border: 3px solid;
+  color: #252525;
+  padding: 10px 20px;
+}
+
+.stores-item a:hover {
+  text-decoration: none;
+  color: #c17139;
+  border-color: #c17139;
+}
+
+/* Subscribe */
+
+.subscribe {
+  background: #e7e4d8;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.subscribe-info h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.subscribe-info p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.subscribe form {
+  margin: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.subscribe form label {
+  display: none;
+}
+
+.subscribe input {
+  align-self: flex-start;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: Georgia, serif;
+  padding: 10px;
+}
+
+.subscribe button {
+  align-self: flex-start;
+  background: #252525;
+  border: none;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 13px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  background: #252525;
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer p {
+  font-size: 1.125rem;
+  line-height: 1.4em;
+}
+
+.footer img {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .footer img {
+    float: none;
+    margin-top: 20px;
+  }
+}
