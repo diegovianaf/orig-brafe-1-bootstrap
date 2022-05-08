@@ -1,6 +1,6 @@
 # Brafé - Bootstrap
  
-This project was developed during the Advanced CSS course at Origamid. [Origamid](https://www.origamid.com/curso/css-avancado-posicionamento/).
+This project was developed during the Advanced CSS course at [Origamid](https://www.origamid.com/curso/css-avancado-posicionamento/).
 
 ## About
 
